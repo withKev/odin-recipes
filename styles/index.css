@@ -1,6 +1,21 @@
-body {
-  background-color: #ffffff;
-  padding: 10px;
+* {
+  border: 1px dotted red;
+}
+
+.recipe-card {
+  background-color: #f9f4e1;
+  border-radius: 20px;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  width: auto;
+  height: auto;
+  max-width: 1000px;
+}
+
+.title {
+  text-align: center;
 }
 
 .image-space {
@@ -10,24 +25,30 @@ body {
 img {
   height: auto;
   width: 700px;
-  align-items: center;
-}
-
-div {
-  background-color: #f9f4e1;
+  max-width: 100%;
   border-radius: 20px;
-  padding: 5px;
 }
 
-h1 {
-  text-align: center;
+.recipe-container {
+  display: flex;
+  justify-content: center;
 }
 
-li {
+.recipe-container ul {
   margin: 10px;
+  text-align: center;
+  padding: 0;
 }
 
-ul li a {
+.recipe-container li {
+  margin: 7px;
+}
+
+.recipe-container a {
   color: black;
   text-decoration: none;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: left;
+  display: block;
 }
